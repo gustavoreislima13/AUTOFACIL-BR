@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ridex - Rent your favourite car</title>
+  <title>Ridex - Alugue seu carro favorito</title>
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
@@ -27,10 +18,6 @@
 </head>
 
 <body>
-
-  <!-- 
-    - #HEADER
-  -->
 
   <header class="header" data-header>
     <div class="container">
@@ -45,19 +32,15 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link" data-nav-link>Início</a>
           </li>
 
           <li>
-            <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explorar carros</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>About us</a>
-          </li>
-
-          <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            <a href="#" class="navbar-link" data-nav-link>Sobre nós</a>
           </li>
 
         </ul>
@@ -72,7 +55,7 @@
         <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
           <ion-icon name="car-outline"></ion-icon>
 
-          <span id="aria-label-txt">Explore cars</span>
+          <span id="aria-label-txt">Explorar carros</span>
         </a>
 
         <a href="#" class="btn user-btn" aria-label="Profile">
@@ -97,18 +80,14 @@
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
       <section class="section hero" id="home">
         <div class="container">
 
           <div class="hero-content">
-            <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
+            <h2 class="h1 hero-title">A maneira fácil de assumir um leasing</h2>
 
             <p class="hero-text">
-              Live in New York, New Jerset and Connecticut!
+              Disponível em Nova York, Nova Jersey e Connecticut!
             </p>
           </div>
 
@@ -117,25 +96,25 @@
           <form action="" class="hero-form">
 
             <div class="input-wrapper">
-              <label for="input-1" class="input-label">Car, model, or brand</label>
+              <label for="input-1" class="input-label">Carro, modelo ou marca</label>
 
               <input type="text" name="car-model" id="input-1" class="input-field"
-                placeholder="What car are you looking?">
+                placeholder="Qual carro você está procurando?">
             </div>
 
             <div class="input-wrapper">
-              <label for="input-2" class="input-label">Max. monthly payment</label>
+              <label for="input-2" class="input-label">Pagamento mensal máx.</label>
 
-              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Add an amount in $">
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Adicione um valor em R$">
             </div>
 
             <div class="input-wrapper">
-              <label for="input-3" class="input-label">Make Year</label>
+              <label for="input-3" class="input-label">Ano de fabricação</label>
 
-              <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Adicione um ano de fabricação mínimo">
             </div>
 
-            <button type="submit" class="btn">Search</button>
+            <button type="submit" class="btn">Pesquisar</button>
 
           </form>
 
@@ -143,21 +122,119 @@
       </section>
 
 
+      <section class="section get-start">
+        <div class="container">
+
+          <h2 class="h2 section-title">Faca sua compra em 4 passos simples</h2>
+
+          <ul class="get-start-list">
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-1">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Crie um perfil</h3>
+
+                <p class="card-text">
+                  Se você for usar uma passagem de Lorem Ipsum, precisa ter certeza.
+                </p>
 
 
+              </div>
+            </li>
 
-      <!-- 
-        - #FEATURED CAR
-      -->
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Diga-nos qual carro você quer</h3>
+
+                <p class="card-text">
+                  Várias versões evoluíram ao longo dos anos
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-3">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Combine com o vendedor</h3>
+
+                <p class="card-text">
+                  Para fazer um livro de espécimes de tipos. Ele sobreviveu não 
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Faça um acordo</h3>
+
+                <p class="card-text">
+                  Existem muitas variações de passagens de Lorem disponíveis
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section class="section story">
+        <div class="container">
+      
+          <div class="story-banner">
+            <figure class="video-banner">
+              <img src="./assets/images/hero-banner.jpg" alt="Vídeo sobre a Ridex" loading="lazy" width="960" height="540" class="w-100">
+      
+              <button class="play-btn" aria-label="Play video">
+                <ion-icon name="play"></ion-icon>
+              </button>
+            </figure>
+          </div>
+      
+          <div class="story-content">
+            <h2 class="h2 section-title">Eficiência. Transparência. Controle.</h2>
+      
+            <p class="story-text">
+              A Ridex desenvolveu uma plataforma para o mercado de aluguel de carros que permite aos locatários e proprietários executarem transações de forma fácil e por conta própria. A plataforma proporciona eficiência, transparência de custos e controle nas mãos dos consumidores. Ridex é o Aluguel de Carros Redefinido.
+            </p>
+      
+            <a href="#" class="btn">Saiba Mais</a>
+          </div>
+      
+        </div>
+      </section>
+
 
       <section class="section featured-car" id="featured-car">
         <div class="container">
 
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Featured cars</h2>
+            <h2 class="h2 section-title">Carros em destaque</h2>
 
             <a href="#" class="featured-car-link">
-              <span>View more</span>
+              <span>Ver mais</span>
 
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
@@ -188,25 +265,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Hybrid</span>
+                      <span class="card-item-text">Híbrido</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">6.1km / 1-litre</span>
+                      <span class="card-item-text">6.1km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -214,14 +291,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$440</strong> / month
+                      <strong>R$440</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -253,25 +330,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Gasoline</span>
+                      <span class="card-item-text">Gasolina</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">8.2km / 1-litre</span>
+                      <span class="card-item-text">8.2km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -279,14 +356,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$350</strong> / month
+                      <strong>R$350</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -318,25 +395,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Gasoline</span>
+                      <span class="card-item-text">Gasolina</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">5.3km / 1-litre</span>
+                      <span class="card-item-text">5.3km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -344,14 +421,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$400</strong> / month
+                      <strong>R$400</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -383,25 +460,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Gasoline</span>
+                      <span class="card-item-text">Gasolina</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">7.7km / 1-litre</span>
+                      <span class="card-item-text">7.7km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -409,14 +486,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$620</strong> / month
+                      <strong>R$620</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -448,25 +525,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Gasoline</span>
+                      <span class="card-item-text">Gasolina</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">7.6km / 1-litre</span>
+                      <span class="card-item-text">7.6km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -474,14 +551,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$530</strong> / month
+                      <strong>R$530</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -513,25 +590,25 @@
                     <li class="card-list-item">
                       <ion-icon name="people-outline"></ion-icon>
 
-                      <span class="card-item-text">4 People</span>
+                      <span class="card-item-text">4 Pessoas</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="flash-outline"></ion-icon>
 
-                      <span class="card-item-text">Gasoline</span>
+                      <span class="card-item-text">Gasolina</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">7.2km / 1-litre</span>
+                      <span class="card-item-text">7.2km / 1-litro</span>
                     </li>
 
                     <li class="card-list-item">
                       <ion-icon name="hardware-chip-outline"></ion-icon>
 
-                      <span class="card-item-text">Automatic</span>
+                      <span class="card-item-text">Automático</span>
                     </li>
 
                   </ul>
@@ -539,326 +616,14 @@
                   <div class="card-price-wrapper">
 
                     <p class="card-price">
-                      <strong>$490</strong> / month
+                      <strong>R$490</strong> / mês
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button class="btn fav-btn" aria-label="Adicionar à lista de favoritos">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <button class="btn">Rent now</button>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #GET START
-      -->
-
-      <section class="section get-start">
-        <div class="container">
-
-          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
-
-          <ul class="get-start-list">
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-1">
-                  <ion-icon name="person-add-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Create a profile</h3>
-
-                <p class="card-text">
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure.
-                </p>
-
-                <a href="#" class="card-link">Get started</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-2">
-                  <ion-icon name="car-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Tell us what car you want</h3>
-
-                <p class="card-text">
-                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-3">
-                  <ion-icon name="person-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Match with seller</h3>
-
-                <p class="card-text">
-                  It to make a type specimen book. It has survived not only five centuries, but also the leap into
-                  electronic
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="get-start-card">
-
-                <div class="card-icon icon-4">
-                  <ion-icon name="card-outline"></ion-icon>
-                </div>
-
-                <h3 class="card-title">Make a deal</h3>
-
-                <p class="card-text">
-                  There are many variations of passages of Lorem available, but the majority have suffered alteration
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" id="blog">
-        <div class="container">
-
-          <h2 class="h2 section-title">Our Blog</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-1.jpg" alt="Opening of new offices of the company" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Company</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Opening of new offices of the company</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" alt="What cars are most vulnerable" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Repair</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">What cars are most vulnerable</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" alt="Statistics showed which average age" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Cars</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Statistics showed which average age</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-4.jpg" alt="What´s required when renting a car?" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Cars</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">What´s required when renting a car?</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-5.jpg" alt="New rules for handling our cars" loading="lazy"
-                      class="w-100">
-                  </a>
-
-                  <a href="#" class="btn card-badge">Company</a>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">
-                    <a href="#">New rules for handling our cars</a>
-                  </h3>
-
-                  <div class="card-meta">
-
-                    <div class="publish-date">
-                      <ion-icon name="time-outline"></ion-icon>
-
-                      <time datetime="2022-01-14">January 14, 2022</time>
-                    </div>
-
-                    <div class="comments">
-                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-
-                      <data value="114">114</data>
-                    </div>
+                    <button class="btn">Alugue agora</button>
 
                   </div>
 
@@ -879,10 +644,6 @@
 
 
 
-  <!-- 
-    - #FOOTER
-  -->
-
   <footer class="footer">
     <div class="container">
 
@@ -894,32 +655,26 @@
           </a>
 
           <p class="footer-text">
-            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
-            consumers an
-            attractive and fun selection.
+            Procure por aluguel de carros baratos em Nova York. Com uma frota diversificada de 19.000 veículos, a Waydex oferece a seus consumidores uma seleção atraente e divertida.
           </p>
         </div>
 
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Company</p>
+            <p class="footer-list-title">Empresa</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Sobre nós</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Pricing plans</a>
+            <a href="#" class="footer-link">Planos de preços</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Our blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contacts</a>
+            <a href="#" class="footer-link">Contatos</a>
           </li>
 
         </ul>
@@ -927,23 +682,23 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Support</p>
+            <p class="footer-list-title">Suporte</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Help center</a>
+            <a href="#" class="footer-link">Central de ajuda</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Ask a question</a>
+            <a href="#" class="footer-link">Faça uma pergunta</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Privacy policy</a>
+            <a href="#" class="footer-link">Política de privacidade</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & conditions</a>
+            <a href="#" class="footer-link">Termos e condições</a>
           </li>
 
         </ul>
@@ -951,7 +706,7 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Neighborhoods in New York</p>
+            <p class="footer-list-title">Bairros em Nova York</p>
           </li>
 
           <li>
@@ -959,7 +714,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Central New York City</a>
+            <a href="#" class="footer-link">Centro de Nova York</a>
           </li>
 
           <li>
@@ -1033,7 +788,7 @@
         </ul>
 
         <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+          &copy; 2022 <a href="#">codewithsadee</a>. Todos os direitos reservados
         </p>
 
       </div>
@@ -1045,14 +800,8 @@
 
 
 
-  <!-- 
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

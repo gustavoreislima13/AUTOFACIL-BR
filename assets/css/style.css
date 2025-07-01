@@ -9,7 +9,6 @@
 
 
 
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -20,30 +19,47 @@
    * colors
    */
 
-  --pale-purple-pantone: hsl(262, 63%, 92%);
-  --medium-sea-green: hsl(152, 63%, 43%);
-  --lavender-blush: hsl(336, 35%, 92%);
-  --carolina-blue: hsl(204, 91%, 53%);
-  --columbia-blue: hsl(204, 92%, 90%);
-  --alice-blue-1: hsl(216, 38%, 95%);
-  --alice-blue-2: hsl(216, 75%, 97%);
-  --alice-blue-3: hsl(216, 38%, 95%);
-  --alice-blue-4: hsl(217, 33%, 92%);
-  --independence: hsl(219, 21%, 39%);
-  --deep-cerise: hsl(329, 63%, 52%);
-  --eerie-black: hsl(210, 11%, 15%);
-  --space-cadet: hsl(240, 22%, 25%);
-  --blue-jeans: hsl(204, 80%, 63%);
-  --slate-blue: hsl(262, 60%, 57%);
-  --beau-blue: hsl(208, 86%, 92%);
-  --honey-dew: hsl(152, 48%, 89%);
-  --mimi-pink: hsl(329, 63%, 90%);
-  --red-salsa: hsl(0, 79%, 63%);
-  --sapphire: hsl(211, 100%, 35%);
-  --manatee: hsl(219, 14%, 60%);
-  --white: hsl(0, 0%, 100%);
+  /* Paleta de Cores do Tema Escuro */
 
-  --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
+  --red-salsa: hsl(0, 94%, 41%);        /* Vermelho principal */
+  --red-salsa-light: hsl(0, 80%, 90%); /* Vermelho claro para fundos de ícones */
+  --red-salsa-dark: hsl(0, 100%, 51%);  /* Vermelho mais escuro para hover */
+  
+  --dark-bg-primary: hsl(0, 0%, 8%);      /* Fundo principal (quase preto) */
+  --dark-bg-secondary: hsl(0, 0%, 12%);   /* Fundo secundário (cartões, etc.) */
+  --dark-bg-tertiary: hsl(0, 0%, 15%);    /* Fundo para hover e rodapé */
+
+  --text-primary: hsl(0, 0%, 100%);    /* Branco puro para títulos */
+  --text-secondary: hsl(0, 0%, 85%);   /* Branco-acinzentado para parágrafos */
+  --text-tertiary: hsl(0, 0%, 60%);    /* Cinza para textos menos importantes */
+
+  /* Mapeamento das variáveis antigas para as novas */
+  --carolina-blue: var(--red-salsa);
+  --columbia-blue: var(--red-salsa-light);
+  --blue-jeans: var(--red-salsa);
+  --sapphire: var(--red-salsa-dark);
+
+  --alice-blue-1: var(--dark-bg-primary);
+  --alice-blue-2: var(--dark-bg-secondary);
+  --alice-blue-3: var(--dark-bg-secondary);
+  --alice-blue-4: var(--dark-bg-tertiary);
+  --white: var(--dark-bg-secondary); /* O branco agora é um fundo escuro */
+
+  --eerie-black: var(--text-primary);
+  --space-cadet: var(--text-primary);
+  --independence: var(--text-secondary);
+  --manatee: var(--text-tertiary);
+  
+  /* Cores dos Ícones "Get Started" */
+  --deep-cerise: var(--red-salsa);
+  --mimi-pink: var(--red-salsa-light);
+  --medium-sea-green: var(--red-salsa);
+  --honey-dew: var(--red-salsa-light);
+  --slate-blue: var(--red-salsa);
+  --pale-purple-pantone: var(--red-salsa-light);
+  --beau-blue: var(--red-salsa-light);
+
+  --gradient: linear-gradient(to top, var(--dark-bg-secondary), var(--dark-bg-primary));
 
   /**
    * typography
@@ -87,11 +103,10 @@
    * shadow
    */
 
-  --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
-  --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
+  --shadow-1: 0 4px 8px hsla(0, 0%, 0%, 0.2);
+  --shadow-2: 0 6px 12px hsla(0, 79%, 63%, 0.2); /* Sombra vermelha */
 
 }
-
 
 
 
@@ -1201,3 +1216,63 @@ button, a { transition: var(--transition); }
   .footer-list:last-of-type { width: 33.33%; }
 
 }
+
+/*-----------------------------------*\
+  #STORY
+\*-----------------------------------*/
+
+.story .container {
+  display: grid;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-banner .video-banner {
+  position: relative;
+  border-radius: var(--radius-18);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+
+.story-banner .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--carolina-blue);
+  font-size: 30px;
+  box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.1);
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.story-banner .play-btn:is(:hover, :focus) {
+  background: var(--carolina-blue);
+  color: var(--white);
+}
+
+.story-content .section-title {
+  margin-bottom: 20px;
+}
+
+.story-content .story-text {
+  color: var(--independence);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/**
+ * Adicionar dentro de @media (min-width: 992px)
+ */
+
+.story .container {
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
