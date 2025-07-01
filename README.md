@@ -26,16 +26,6 @@ A **AutoFácil Brasil** é uma plataforma online para a venda de carros de repas
 
 Este repositório contém todo o código front-end do nosso site, projetado para ser responsivo e amigável em todos os dispositivos.
 
-### Screenshot da Demonstração
-
-![AutoFácil Brasil Desktop Demo](./readme-images/desktop.png "Demonstração em Desktop")
-
-### Pré-requisitos
-
-Antes de começar, garanta que você tenha os seguintes requisitos:
-
-* [Git](https://git-scm.com/downloads "Download Git") instalado no seu sistema operacional.
-
 ### Rodando Localmente
 
 Para rodar o projeto **AutoFácil Brasil** localmente, execute este comando no seu terminal:
